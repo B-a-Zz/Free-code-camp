@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+section a {
+    background-color: rgb(233, 241, 241);
+    padding: 0.1rem 1rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: 15rem;
+}
+
+.lg {
+    color: skyblue;
+    padding-left: 1rem;
+}
+
+.hd {
+    color: slateblue;
+}
+
+.hd span {
+    color: snow;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+body {
+    background-color: #afaeb1;
+}
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-rows: repeat(auto);
+    grid-template-areas: "img img" "txt txt";
+    grid-gap: 2.5remrem;
+}
+
+
+/* HEADER */
+
+
+/*  nav bar */
+
+.ng {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    color: white;
+    background-color: #000;
+}
+
+nav .ng-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    color: white;
+    padding-right: 2rem;
+}
+
+nav .ng-nav a {
+    color: white;
+    transition: all ease 0.8s;
+    padding: 0 1rem;
+}
+
+nav .ng-nav a:hover {
+    color: rgb(12, 235, 235);
+    background-color: rgba(0, 0, 0, 0.7);
+    ;
+    border-bottom: 0.2rem solid rgb(8, 219, 209);
+}
+
+
+/*  GRID-LAYOUT FOR MOBILE */
+
+.main-img {
+    grid-area: img;
+    display: grid;
+    justify-items: center;
+}
+
+section {
+    grid-area: txt;
+}
